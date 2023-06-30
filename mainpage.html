@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Alkatra&family=Anton&family=Arbutus&family=Bad+Script&family=Barrio&family=Baumans&family=Bigelow+Rules&family=Black+Ops+One&family=Bungee+Spice&family=Caprasimo&family=Chivo+Mono&family=Concert+One&family=Elsie+Swash+Caps&family=Foldit:wght@700&family=Kaushan+Script&family=Lobster&family=Lobster+Two&family=Miltonian+Tattoo&family=Montez&family=Oswald:wght@700&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed&family=Rubik+Iso&family=Rubik+Wet+Paint&family=Sedgwick+Ave+Display&family=Smokum&family=Staatliches&family=Yatra+One&family=Zeyada&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Main page</title>
+</head>
+
+<body>
+    <nav class="navbar bgg" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/calculainglogo" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                <span class="tet">Budget Calculating App</span>
+                <button onclick="logout()" class="log btn btn-danger">Log Out</button>
+            
+            </a>
+        </div>
+    </nav>
+
+    <div class="contaniner d-flex ps-5 ms-3">
+        <!-- <div class="row"> -->
+            <div class="col-4 my-3 py-5">
+                <div class="card m-3 p-2 bgg" style="width: 18rem;">
+                    <p class="text-center tet">Add Your Income Here</p>
+                    <input id="usrname" class="inp form-control my-3" type="text" placeholder="Description">
+                    <input id="usramount" class="inp form-control my-3" type="number" placeholder="Amount">
+                    <div class="card-body text-center">
+                        <button type="reset" onclick="addInc()" class="inp btn btn-success">Add  Income</button>
+                    </div>
+                    
+
+                </div>
+                <div class="text-warning ">
+                    <div>
+                    <table id="tablee" class="bg-success">
+                        
+                        <thead>
+                            <th  class=" iSource">Income-Description</th>
+                            <th   class="iSource1">Amount</th>
+                            <!-- <th><button onclick="" id="btns" class="btn btn-danger">&#10539; </button></th> -->
+                        </thead>
+                    
+                    
+                    </table>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-4 my-3 py-5 ">
+                <div class="card m-4 p-3 bgg" style="width: 18rem;">
+                    <p class="text-center tet">Your Savings</p>
+                    <p  id="amnt"  class="text-center inp form-control p-3">0</p>
+                    
+
+
+                </div>
+            </div>
+            <div class="col-4 my-3 py-5">
+                <div class="card m-3 p-2 bgg" style="width: 18rem;">
+                    <p class="text-center tet">Add Your Expense Here</p>
+                    <input id="expname" class="inp form-control my-3" type="text" placeholder="Description">
+                    <input id="expamount" class="inp form-control my-3" type="number" placeholder="Amount">
+                    <div class="card-body text-center">
+                        <button onclick="expInc()" class=" inp btn btn-danger">Add  Expense</button>
+                    </div>
+                </div>
+                <div class="text-warning ">
+                    <table id="tablee2" class="bg-danger">
+                        <thead>
+                            <th class="iSource">Expense-Description</th>
+                            <th class="iSource1">Amount</th>
+                        </thead>
+                    </table>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center">
+        <button onclick="clearAll()" class="btn btn-outline-danger">Clear All</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

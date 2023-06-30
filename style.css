@@ -1,0 +1,55 @@
+*{
+    /* border: 1px solid black; */
+    padding: 0px;
+    margin: 0px;
+    
+}
+body{
+    background-image: url(./images/logged.jpg);
+
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  
+   background-size: cover;
+   
+
+}
+
+
+.mainn{
+    box-shadow: 2px 2px 12px 2px rgb(0, 0, 0);
+    border-radius: 20px;
+   
+}
+.txtt{
+    color: blue;
+    text-shadow: 2px 2px 4px  rgb(231, 134, 134);
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+}
+
+.tes{
+color: blue;
+font-size: 18px;
+font-family: 'Staatliches', cursive;
+
+}
+.tet{
+    font-size: 28px;
+    font-family: 'Staatliches', cursive; 
+}
+.iSource{
+    padding-right:6rem 
+}
+.iSource1{
+    padding-right:2rem 
+}
+.inp{
+    box-shadow: 1px 1px 2px 1px black;
+}
+.log{
+    margin-left:55rem ;
+}
+.bgg{
+    background-color: rgb(150, 194, 211);
+}
