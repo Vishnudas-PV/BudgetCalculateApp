@@ -14,7 +14,9 @@ body{
    
 
 }
-
+.con2{
+    display: flex;
+}
 
 .mainn{
     box-shadow: 2px 2px 12px 2px rgb(0, 0, 0);
@@ -52,4 +54,97 @@ font-family: 'Staatliches', cursive;
 }
 .bgg{
     background-color: rgb(150, 194, 211);
+}
+@media only screen and (max-width: 600px){
+    .con2{
+        display: flex;
+        flex-direction: column;
+     
+        
+     
+    }
+    .log{
+        margin-left:100px;
+    }
+    .table2{
+        margin-left:20px;
+    }
+    .col_1{
+        margin-left:50px;
+    }
+    .clr{
+        margin-bottom:10px;
+        margin-left:60px;
+    }
+    
+    
+ @media only screen and (max-width: 500px){
+    .col__4{
+        width:500px;
+        height: 500px;
+        font-size: 19px;
+    }
+    .col__5{
+        margin-left:100px;
+        width:500px;
+        height: 500px;
+        font-size: 19px;
+    }
+ }     
+ @media only screen and (max-width: 700px){
+    .con2{
+        display: flex;
+        flex-direction:column;
+      
+    }
+    .log{
+        margin-left:100px;
+    }
+    .table2{
+        margin-left:20px;
+    }
+    .col_1{
+        margin-left:50px;
+    }
+    .clr{
+        margin-bottom:10px;
+        margin-left:60px;
+    }
+ }   
+ @media only screen and (max-width: 600px){
+    .col__4{
+        width:500px;
+        height: 500px;
+        font-size: 19px;
+    }
+    .col__5{
+        margin-left:100px;
+        width:500px;
+        height: 500px;
+        font-size: 19px;
+    }
+ }     
+  
+ @media only screen and (max-width:650px){
+    .col__4{
+        width:500px;
+        height: 500px;
+        font-size: 19px;
+    }
+    .col__5{
+        margin-left:100px;
+        width:500px;
+        height: 500px;
+        font-size: 19px;
+    }
+ }     
+ 
+ @media only screen and (max-width: 500px){
+    .col__5{
+        margin-left:100px;
+        width:500px;
+        height: 500px;
+        font-size: 19px;
+    }
+ }     
 }
